@@ -1,6 +1,17 @@
+import { Provider as ReduxProvider } from 'react-redux'
+
+import { AddTodo } from "./components/AddTodo";
+import { TodoList } from "./components/TodoList";
+import { store } from './store';
+
 export function App() {
 
   return (
-    <h1>Hello Dev!</h1>
+    <div>
+      <ReduxProvider store={store} children={undefined}>
+        <AddTodo/>
+        <TodoList/>
+      </ReduxProvider>
+    </div>
   )
 }
