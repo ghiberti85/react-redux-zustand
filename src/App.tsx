@@ -8,7 +8,7 @@ export function App() {
 
   return (
     <div>
-      <ReduxProvider store={store} children={undefined}>
+      <ReduxProvider store={store}>
         <AddTodo/>
         <TodoList/>
       </ReduxProvider>

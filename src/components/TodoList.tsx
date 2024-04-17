@@ -5,7 +5,7 @@ export function TodoList() {
 
     return(
         <ul>
-            {todos.map(todo => <li ley={todo}>{todo}</li>)}
+            {todos.map(todo => <li key={todo}>{todo}</li>)}
         </ul>
     )
 }
