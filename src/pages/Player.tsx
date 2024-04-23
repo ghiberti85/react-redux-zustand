@@ -32,6 +32,14 @@ export function Player () {
                                 </div>
                                 <ChevronDown className="w-5 h-5 ml-auto text-zinc-400" />
                             </button>
+
+                            <nav className="relative flex flex-col gap-4 p-6">
+                                <button className="flex items-center gap-3 text-sm text-zinc-400">
+                                    <video className="w-4 h-4 text-zinc-500" />
+                                    <span>Fundamentos do Redux</span>
+                                    <span className="ml=auto font-mono text-xs text-zinc-500">09:13</span>
+                                </button>
+                            </nav>
                         </div>
                     </aside>
                 </main>
