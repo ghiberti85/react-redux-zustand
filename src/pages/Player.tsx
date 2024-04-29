@@ -12,7 +12,7 @@ export function Player () {
     const dispatch = useDispatch()
     
     const modules = useAppSelector(state => {
-        return state.player.course.modules
+        return state.player.course?.modules
     })
 
     const { currentLesson } = useCurrentLesson()
